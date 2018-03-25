@@ -2,6 +2,4 @@
 
 
 const NodeSeqdepot = require('./src/NodeSeqdepot')
-module.exports = {
-	NodeSeqdepot
-}
+module.exports = NodeSeqdepot
