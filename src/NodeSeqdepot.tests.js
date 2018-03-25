@@ -47,12 +47,12 @@ describe('NodeSeqdepot', function() {
                     aseq_id: 'npORB8GGfXLBYjo0s3_QNQ'
                 },
                 {
-                    aseq_id: 'lXFJ1g8Tyb15AP8ol_sZ1eQ'
+                    aseq_id: 'lXFJ1g8Tyb15AP8ol_skZ1eQ'
                 }
             ]
             return nsd.addAseqInfo(genes, {keepGoing: true}).then((items) => {
-                console.log(items)
-                expect(items.length).eql(genes.length)                
+                expect(items.length).eql(genes.length)
+                expect(items[1].ai).to.be.null             
 			})
 		})
     })
