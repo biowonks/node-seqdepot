@@ -8,7 +8,7 @@ let httpDefaultOptions = {
 }
 
 module.exports =
-class NodeMist3 {
+class NodeSeqdepotAbstract {
 	constructor(options) {
 		this.httpOptions = options ? options : httpDefaultOptions
 	}
