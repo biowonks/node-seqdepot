@@ -1,3 +1,7 @@
 'use strict'
 
-exports = require('./src/NodeSeqdepot')
+
+const NodeSeqdepot = require('./src/NodeSeqdepot')
+module.exports = {
+	NodeSeqdepot
+}
