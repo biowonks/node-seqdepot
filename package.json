@@ -1,0 +1,35 @@
+{
+  "name": "node-seqdepot",
+  "version": "0.1.0",
+  "description": "Node wrapper to SeqDepot API",
+  "main": "index.js",
+  "scripts": {
+    "test": "NODE_PATH=node_modules node_modules/.bin/nyc node_modules/.bin/mocha --reporter mocha-pretty-bunyan-nyan $(find src -name '*tests.js')",
+    "mocha": "NODE_PATH=node_modules node_modules/.bin/mocha --reporter mocha-pretty-bunyan-nyan $(find src -name '*tests.js')",
+    "coverage": "NODE_PATH=node_modules node_modules/.bin/nyc report --reporter=text-lcov | coveralls"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/biowonks/node-seqdepot.git"
+  },
+  "keywords": [
+    "bioinformatics",
+    "biowonks",
+    "seqdepot",
+    "protein"
+  ],
+  "author": "Davi Ortega",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/biowonks/node-seqdepot/issues"
+  },
+  "homepage": "https://github.com/biowonks/node-seqdepot#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "coveralls": "^3.0.0",
+    "mocha": "^5.0.5",
+    "mocha-pretty-bunyan-nyan": "^1.0.4",
+    "nyc": "^11.6.0"
+  }
+}
