@@ -2,7 +2,7 @@
   "name": "node-seqdepot",
   "version": "0.1.0",
   "description": "Node wrapper to SeqDepot API",
-  "main": "./src/Nodeseqdepot.js",
+  "main": "index.js",
   "scripts": {
     "test": "NODE_PATH=node_modules node_modules/.bin/nyc node_modules/.bin/mocha --reporter mocha-pretty-bunyan-nyan $(find src -name '*tests.js')",
     "mocha": "NODE_PATH=node_modules node_modules/.bin/mocha --reporter mocha-pretty-bunyan-nyan $(find src -name '*tests.js')",
