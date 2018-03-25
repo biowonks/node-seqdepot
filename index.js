@@ -1,3 +1,3 @@
 'use strict'
 
-exports.NodeSeqdepot = require('./src/NodeSeqdepot')
+exports = require('./src/NodeSeqdepot')
